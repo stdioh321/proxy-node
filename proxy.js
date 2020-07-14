@@ -3,6 +3,7 @@ var http = require('http');
 var url = require('url');
 var request = require('request');
 
+process.env['NODE_TLS_REJECT_UNAUTHORIZED'] = '0';
 http.createServer(onRequest).listen(process.env.PORT || 3000);
 
 function onRequest(req, res) {
