@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CorsHa</title>
+</head>
+
+<body>
+    <h1>CorsHa</h1>
+    <p>
+        Create a request to "url", and includes CORS headers in the response.
+    </p>
+    <h4>How to use:</h4>
+    <div>
+        Replace the "url" with any url you want.
+    </div>
+    <b>
+        <div id="how">Loading...</div>
+    </b>
+    <br><br>
+    <div>
+        <b>Example</b>
+    </div>
+    <i>
+        <b>
+            <a id="example" target="_blank"></a>
+        </b>
+    </i>
+</body>
+<script>
+    window.onload = () => {
+        let host = location.protocol + "//" + location.host;
+        let how = document.getElementById("how");
+        how.innerText = host + "/<url>";
+
+        let example = document.getElementById("example");
+        example.innerText = host + "/https://example.com";
+        example.href = host + "/https://example.com";
+    };
+</script>
+
+</html>
