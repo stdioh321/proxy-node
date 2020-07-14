@@ -9,6 +9,7 @@ EXPOSE 3000
 
 USER root
 
-RUN apk add --update nodejs npm
+RUN apk add --update nodejs npm \
+    && npm install
 
-CMD node proxy.js 
+CMD node proxy.js    
