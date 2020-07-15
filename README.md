@@ -31,8 +31,20 @@ $ cd ~/.anyproxy/certificates/
 ```sh
 $ node proxy.js
 ```
+
 * The proxy server will run at the port **8001.**
 * Setup your OS proxy to use the host  and port **127.0.0.1:8001**
+
+You can also run with the tool anyproxy.
+
+### Run with anyproxy
+```sh
+$ anyproxy --rule rules.js
+```
+Running with the tool you also can access the webinterface:
+http://localhost:8002
+
+![Webinterface](./screenshots/webinterface.png)
 
 ## Testing
 ```sh
