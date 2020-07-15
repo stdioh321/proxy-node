@@ -36,7 +36,7 @@ $ node proxy.js
 
 ## Testing
 ```sh
-$ curl http://superdownloads.com.br --proxy 127.0.0.0:8001
+$ curl http://www.superdownloads.com.br --proxy 127.0.0.0:8001
 ```
 
 ![Curl](./screenshots/curl.png)
