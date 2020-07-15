@@ -2,7 +2,7 @@
   "name": "nodeproxy",
   "version": "1.0.0",
   "description": "",
-  "main": "index.js",
+  "main": "cors.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
@@ -10,6 +10,7 @@
   "license": "ISC",
   "dependencies": {
     "agentkeepalive": "^4.0.0",
+    "anyproxy": "^4.1.3",
     "colors": "~1.3.0",
     "connect-restreamer": "~1.0.0",
     "express": "^4.17.1",

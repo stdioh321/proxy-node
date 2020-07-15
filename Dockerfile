@@ -12,4 +12,4 @@ USER root
 RUN apk add --update nodejs npm \
     && npm install
 
-CMD node proxy.js    
+CMD node cors.js    
