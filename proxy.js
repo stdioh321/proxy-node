@@ -1,6 +1,7 @@
 const AnyProxy = require('anyproxy');
+let tmpPort = process.env.PORT || 8001;
 const options = {
-  port: 8001,
+  port: tmpPort,
   rule: require('./rules'),
   webInterface: {
     enable: true,
@@ -9,12 +10,12 @@ const options = {
   throttle: 10000,
   forceProxyHttps: true,
   wsIntercept: false,
-  silent: true
+  silent: false
 };
 const proxyServer = new AnyProxy.ProxyServer(options);
 
-proxyServer.on('ready', () => { 
-    // console.log("Here");
+proxyServer.on('ready', () => {
+  console.log("Proxy ready at port: " + tmpPort);
 });
 proxyServer.on('error', (e) => { /* */ });
 proxyServer.start();
